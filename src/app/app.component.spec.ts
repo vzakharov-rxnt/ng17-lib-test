@@ -17,13 +17,13 @@ describe('AppComponent', () => {
   it(`should have the 'ng17-lib-test' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ng17-lib-test-tmp');
+    expect(app.title).toEqual('ng17-lib-test');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ng17-lib-test-tmp');
+    expect(compiled.querySelector('div')?.textContent).toContain('ng17-lib-test');
   });
 });
