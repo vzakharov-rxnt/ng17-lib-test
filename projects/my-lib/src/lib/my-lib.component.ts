@@ -12,5 +12,7 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class MyLibComponent {
-
+  sayHello() {
+    console.log('Hello');
+  }
 }
